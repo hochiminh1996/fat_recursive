@@ -11,25 +11,38 @@
 }
 
 #principal{
-    border: 1px solid #d9d9d9;
-    padding: 10px 10px;
+    /* border: 1px solid #d9d9d9; */
     width: 500px;
-    margin: 0 auto;
     font-family: var(--font-padrao);
-    margin-top: 5%;
     border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
 }
 
 #box{
-    width: 100%;
-    /* border: 1px solid; */
+    width:100%;
+    border: 1px solid #d9d9d9;
     display: flex;
     flex-direction: column;
     padding: 10px 0px;
+    justify-content: center;  
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    background-color: #fefefe;
+
 }
 
 #box > h2{
     font-size: 2em;
+    background-image:  linear-gradient(to right, #09f, transparent);
+    color: #fefefe;
+    padding: 5px 5px;
+    border-radius: 5px 0px 0px 5px;
 }
 
 #box > label{
@@ -41,10 +54,17 @@
     border: 1px solid #d9d9d9;
     border-radius: 4px;
     outline: none;
+    font-family: var(--font-padrao);
 }
 
 #num.border-error{
     border: 1px solid red;
+}
+
+
+#num.border-blue:focus{
+    border: 1px solid #09f;
+    
 }
 
 
@@ -62,6 +82,7 @@
     cursor: pointer;
     border: 1px solid #d9d9d9;
     border-radius: 5px;
+    background-color: #fefefe;
 }
 
 #btn:hover{
@@ -75,6 +96,10 @@
 /* div resultado 
     se tiver um p-error ou p-fatorial gerado pelo js, ele vai aplicar o estilo
 */
+div#resultado{
+    margin-top: .2em;
+}
+
 div#resultado > p#p-error{
     /* border: 1px solid red; */
     padding: 10px 0px;
@@ -90,4 +115,5 @@ div#resultado > #p-fatorial{
     color: #fefefe;
     border-radius: 5px;
     padding: 10px 0px;
+    font-size: 1.3em;
 }
