@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-padrao: "Bebas Neue";
+}
+
+#principal{
+    border: 1px solid #d9d9d9;
+    padding: 10px 10px;
+    width: 500px;
+    margin: 0 auto;
+    font-family: var(--font-padrao);
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+#box{
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+#box > h2{
+    font-size: 2em;
+}
+
+#box > label{
+    font-size: 1.5em;
+}
+
+#num{
+    padding: 15px 5px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    outline: none;
+}
+
+#num.border-error{
+    border: 1px solid red;
+}
+
+
+::placeholder{
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    color: black;
+}
+
+#btn{
+    margin-top: 10px;
+    padding: 10px;
+    font-family: var(--font-padrao);
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+#btn:hover{
+    border: 1px solid black;
+    background-color: black;
+    color: #fefefe;
+    transition: all linear .5s;
+}
+
+
+/* div resultado 
+    se tiver um p-error ou p-fatorial gerado pelo js, ele vai aplicar o estilo
+*/
+div#resultado > p#p-error{
+    /* border: 1px solid red; */
+    padding: 10px 0px;
+    background-color: red;
+    text-align: center;
+    color: #fefefe;
+    border-radius: 5px;
+}
+
+div#resultado > #p-fatorial{
+    background-color: #09f;
+    text-align: center;
+    color: #fefefe;
+    border-radius: 5px;
+    padding: 10px 0px;
+}
