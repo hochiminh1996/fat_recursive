@@ -4,9 +4,19 @@
  A recursão é uma técnica em programação em que uma função chama a si mesma para resolver um problema. No caso de cálculo de fatorial, uma função pode ser escrita de forma recursiva, onde ela irá chamar a si mesma, decrementando o valor de n até chegar a 1, e multiplicando todos os valores retornados pelas chamadas recursivas (cujo os valores estão salvos no acumulador da função). O resultado final é o fatorial de n. Essa técnica é eficiente para o cálculo de fatorial, pois divide o problema em subproblemas menores e os resolve de forma incremental, até chegar ao resultado final.
 
 
-**Expressão : n<=1 ? n=1 : n * fatorial(n-1)**
+<div align="center">
+<strong>Expressão : n * fatorial(n-1)</strong>
+</div><br>
+<p align="justify">
+A condição base é a parte da fórmula recursiva que define quando a recursão deve parar. No caso do cálculo de fatorial, a condição base é definida como:
 
-Exemplo:
+<code>if(n == 0 || n==1){
+  return 1; 
+}
+</code>
+</p>
+
+<h2>Exemplo</h2>
 N = 7
 
 Parte 1 : decrementando o N
