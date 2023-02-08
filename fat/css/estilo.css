@@ -143,7 +143,7 @@ div#resultado > #p-fatorial{
 @media(max-width:670px){
     #principal{
         width: 90%;
-        height: 100vh;
+        height: fit-content;
         border: 1px solid red;
     }
 }
