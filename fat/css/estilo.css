@@ -139,3 +139,10 @@ div#resultado > #p-fatorial{
     transition: all linear .5s;
     color: #fefefe;
 }
+
+@media(max-width:670px){
+    #principal{
+        width: 90%;
+        height: 100vh;
+    }
+}
