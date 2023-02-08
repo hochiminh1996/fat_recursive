@@ -140,7 +140,7 @@ div#resultado>#p-fatorial {
     color: #fefefe;
 }
 
-@media(max-width:670px){
+@media(max-width:500px){
     section{
         width: 100%;
         height: fit-content;
@@ -148,7 +148,7 @@ div#resultado>#p-fatorial {
     }
 
     #box{
-        width: 90%;
+        width: 100%;
     }
 
  
