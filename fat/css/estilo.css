@@ -144,11 +144,12 @@ div#resultado>#p-fatorial {
     section{
         width: 100%;
         height: fit-content;
-        /* border: 1px solid red; */
     }
 
     #box{
         width: 100%;
+        border: 1px solid red;
+
     }
 
  
