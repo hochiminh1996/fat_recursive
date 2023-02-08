@@ -12,7 +12,7 @@
 
 #principal{
     /* border: 1px solid #d9d9d9; */
-    width: 450px;
+    width: 35%;
     font-family: var(--font-padrao);
     border-radius: 5px;
     margin: 0 auto;
@@ -144,5 +144,6 @@ div#resultado > #p-fatorial{
     #principal{
         width: 90%;
         height: 100vh;
+        border: 1px solid red;
     }
 }
