@@ -149,5 +149,7 @@ div#resultado>#p-fatorial {
         width: 100%;
         overflow-x: hidden;
     }
- 
+    #btn{
+        border:1px solid red;
+    }
 }
