@@ -143,6 +143,7 @@ div#resultado>#p-fatorial {
 
 @media(max-width:670px) {
     #box {
-        width: 85%;
+        width: 95%;
+        padding: 10px;
     }
 }
