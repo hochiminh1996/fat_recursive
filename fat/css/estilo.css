@@ -144,5 +144,13 @@ div#resultado>#p-fatorial {
 
 
 @media(max-width:670px){
-    
+    #box{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid red;
+    }
+
+    #btn{
+        background-color: red;
+    }
 }
