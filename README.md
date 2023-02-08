@@ -17,9 +17,9 @@ A condição base é a parte da fórmula recursiva que define quando a recursão
 </p>
 
 <h2>Exemplo</h2>
-N = 7
+<p>Vamos considerar n = 7, ou seja, 7!</p>
 
-Parte 1 : decrementando o N
+<strong>Parte 1 : decrementando o N</strong>
 <br>1º 7 * (7-1 = 6!) 
 <br>2° 6 * (5-1 = 5!)
 <br>3° 5 * (5-1 = 4!)
@@ -27,7 +27,7 @@ Parte 1 : decrementando o N
 <br>5° 3 * (3-1 = 2!)
 <br>6° 2 * (2-1 = 1!)
 
-Parte 2 : Multiplicando o N pelos retornos recursivos da função (acumulador).
+<strong>Parte 2 : Multiplicando o N pelos retornos recursivos da função (acumulador).</strong>
 <br>6° 7 * 6! = 5040
 <br>5° 6 * 5! = 720 
 <br>4º 5 * 4! = 120
