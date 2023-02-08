@@ -41,7 +41,7 @@ function validacao_campo() {
 
 
     } else {
-        if (document.querySelector("#p-error") || document.getElementsByClassName("border-error")[0]) {
+        if (document.querySelector("#p-error")) {
             // se existir um #p-error, significa que o erro foi ativado anteriormente. Como posteriormente foi preenchido, temos que remover o p que constava um erro
 
             resultado.removeChild(document.querySelector("#p-error"))
@@ -62,8 +62,38 @@ function fat_recursive(num) {
         }
 }
 
-function principal() {
+function btn_limpar() {
+    let div = document.querySelector("#resultado");
+    let btn = document.createElement("input");
 
+
+    if (!document.querySelector("#btn_clear")) {
+        btn.type = "button";
+        btn.value = "Limpar"
+        btn.setAttribute("id", "btn_clear");
+        div.appendChild(btn);
+    }
+
+
+    document.querySelector("#btn_clear").addEventListener("click", () => {
+        document.querySelector("#num").focus();
+        document.querySelector("#num").value = '';
+        document.body.style.background = "#fefefe"
+
+
+        div.removeChild(document.querySelector("#btn_clear"));
+
+        div.removeChild(document.querySelector("#p-fatorial"));
+        div.removeChild(document.querySelector("#p-error"));
+
+        
+        
+    })
+
+    
+}
+
+function principal() {
     if (!validacao_campo()) {
         // se for false, ele chama a função validação novamente
         validacao_campo();
@@ -94,6 +124,7 @@ function principal() {
             div.appendChild(p_fatorial);//agora p é filho da nossa div
             document.querySelector("#num").focus();
 
+
         } else {
 
             // se já existir o elemento em html, apenas trocamos o valor dele. Evitando a criação de um elemento p para cada cálculo realizado. 
@@ -101,7 +132,9 @@ function principal() {
             document.querySelector("#p-fatorial").innerHTML = `Fatorial de ${document.querySelector("#num").value}! = ${fat}`;
             document.querySelector("#num").focus();
 
+
         }
+        btn_limpar();
     }
 
 
