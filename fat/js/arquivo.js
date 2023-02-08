@@ -63,6 +63,8 @@ function fat_recursive(num) {
 }
 
 function btn_limpar() {
+
+
     let div = document.querySelector("#resultado");
     let btn = document.createElement("input");
 
@@ -86,7 +88,7 @@ function btn_limpar() {
         div.removeChild(document.querySelector("#p-fatorial"));
         div.removeChild(document.querySelector("#p-error"));
 
-        
+
         
     })
 
