@@ -11,7 +11,7 @@
 }
 
 #principal {
-    border: 1px solid #d9d9d9;
+    /* border: 1px solid #d9d9d9; */
     width: 100%;
     font-family: var(--font-padrao);
     border-radius: 5px;
@@ -139,6 +139,7 @@ div#resultado>#p-fatorial {
     transition: all linear .5s;
     color: #fefefe;
 }
+
 
 @media(max-width:670px){
     #box{
