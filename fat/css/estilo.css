@@ -30,7 +30,7 @@
     padding: 10px 10px;
     border-radius: 5px;
     background-color: #fefefe;
-    height: 100vh;
+    margin: 0 auto;
 }
 
 #box>h2 {
@@ -139,9 +139,15 @@ div#resultado>#p-fatorial {
 
 @media(max-width:670px){
     section{
-        width: 90%;
-        height: fit-content;
+        width: 100% !important;
+        height: auto;
         border: 1px solid red;
+ 
+    }
+
+    #box{
+        width: 100%;
+        overflow-x: hidden;
     }
  
 }
