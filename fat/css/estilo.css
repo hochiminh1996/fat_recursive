@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --font-padrao: "Bebas Neue";
 }
 
-#principal{
+#principal {
     /* border: 1px solid #d9d9d9; */
-    width: 35%;
+    width: 100%;
     font-family: var(--font-padrao);
     border-radius: 5px;
     margin: 0 auto;
@@ -23,33 +23,34 @@
 
 }
 
-#box{
-    width:100%;
-    border: 1px solid #d9d9d9;
+#box {
+    /* border: 1px solid #d9d9d9; */
     display: flex;
     flex-direction: column;
     padding: 10px 0px;
-    justify-content: center;  
+    justify-content: center;
     padding: 10px 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
     background-color: #fefefe;
-
+    height: fit-content;
+    width: 500px;
+    border: 1px solid red;
 }
 
-#box > h2{
+#box>h2 {
     font-size: 2em;
-    background-image:  linear-gradient(to right, #09f, transparent);
+    background-image: linear-gradient(to right, #09f, transparent);
     color: #fefefe;
     padding: 5px 5px;
     border-radius: 5px 0px 0px 5px;
 }
 
-#box > label{
+#box>label {
     font-size: 1.5em;
 }
 
-#num{
+#num {
     padding: 15px 5px;
     border: 1px solid #d9d9d9;
     border-radius: 4px;
@@ -57,24 +58,24 @@
     font-family: var(--font-padrao);
 }
 
-#num.border-error{
+#num.border-error {
     border: 1px solid red;
 }
 
 
-#num.border-blue:focus{
+#num.border-blue:focus {
     border: 1px solid #09f;
-    
+
 }
 
 
-::placeholder{
+::placeholder {
     font-family: var(--font-padrao);
     font-size: 1.2em;
     color: black;
 }
 
-#btn{
+#btn {
     margin-top: 10px;
     padding: 10px;
     font-family: var(--font-padrao);
@@ -85,7 +86,7 @@
     background-color: #fefefe;
 }
 
-#btn:hover{
+#btn:hover {
     border: 1px solid black;
     background-color: black;
     color: #fefefe;
@@ -96,14 +97,14 @@
 /* div resultado 
     se tiver um p-error ou p-fatorial gerado pelo js, ele vai aplicar o estilo
 */
-div#resultado{
+div#resultado {
     margin-top: .2em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-div#resultado > p#p-error{
+div#resultado>p#p-error {
     /* border: 1px solid red; */
     padding: 10px 0px;
     background-color: red;
@@ -113,7 +114,7 @@ div#resultado > p#p-error{
     margin-top: .2em;
 }
 
-div#resultado > #p-fatorial{
+div#resultado>#p-fatorial {
     background-color: #09f;
     text-align: center;
     color: #fefefe;
@@ -123,7 +124,7 @@ div#resultado > #p-fatorial{
     margin-bottom: 2px;
 }
 
-#btn_clear{
+#btn_clear {
     padding: 5px;
     font-family: var(--font-padrao);
     font-size: 1em;
@@ -133,15 +134,15 @@ div#resultado > #p-fatorial{
     background-color: #fefefe;
 }
 
-#btn_clear:hover{
+#btn_clear:hover {
     background-color: red;
     border: 1px solid red;
     transition: all linear .5s;
     color: #fefefe;
 }
 
-@media(max-width:670px){
-    #principal{
-        border: 1px solid red;
+@media(max-width:670px) {
+    #box {
+        width: 85%;
     }
 }
