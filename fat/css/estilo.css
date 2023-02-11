@@ -144,8 +144,12 @@ div#resultado>#p-fatorial {
 
 
 @media(max-width:670px){
-    #box{
+    #principal{
         width: 100%;
+    }
+
+    #box{
+        width: 90%;
         padding: 10px;
         border: 1px solid red;
     }
